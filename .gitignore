@@ -1,0 +1,28 @@
+# ==========================
+# Python
+# ==========================
+__pycache__/
+*.py[cod]
+
+# Virtual Environment
+geospectra_env/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Raw Planet Data
+data/raw/
+
+# Generated outputs
+outputs/
+
+# Windows
+Thumbs.db
+Desktop.ini 
+
+# macOS
+.DS_Store
