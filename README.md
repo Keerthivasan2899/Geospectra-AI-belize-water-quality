@@ -24,9 +24,9 @@ Corozal Town, Belize
 - ✅ Environment Setup
 - ✅ Data Download
 - ✅ HDF5 Exploration
-- ⏳ Visualization
-- ⏳ Spectral Analysis
-- ⏳ Water Classification
+- ✅ Visualization
+- ✅ Spectral Analysis
+- ✅ Water Classification
 - ⏳ AI Clustering
 - ⏳ Final Report
 
