@@ -79,6 +79,8 @@ Planet Tanager Surface Reflectance
               ▼
      Statistical & Spatial Analysis
 
+```
+
 ---
 
 ## Key Visual Results
