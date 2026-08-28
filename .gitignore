@@ -24,7 +24,22 @@ data/raw/
 # -----------------------------
 # Generated outputs
 # -----------------------------
-outputs/
+
+# Keep generated output directories visible in the repository
+# but ignore large/intermediate files.
+
+outputs/**/*.npy
+outputs/**/*.h5
+outputs/**/*.tif
+outputs/**/*.tiff
+
+# Keep empty directory structure when needed
+!outputs/
+!outputs/figures/
+!outputs/maps/
+!outputs/tables/
+!outputs/analysis/
+!outputs/notebook_05/
 
 # -----------------------------
 # VS Code

@@ -1,0 +1,4 @@
+Indicator,Zone 1 Median,Zone 2 Median,Zone 3 Median,Lowest Median,Highest Median,Difference_Percent
+Green / Blue,1.2112,1.1846,1.2625,1.1846,1.2625,6.576059429343226
+Red / Green,0.7045,0.7533,0.7307,0.7045,0.7533,6.926898509581257
+NIR / Red,0.9289,0.9431,0.8687,0.8687,0.9431,8.564521699090598

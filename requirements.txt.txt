@@ -1,5 +1,0 @@
-h5py          # To unpack and read the internal structure of the .h5 file
-numpy         # For fast, array-based numerical matrix calculations
-rasterio      # To read standard GeoTIFFs (UDM/Visual) and save processed arrays as georeferenced TIFs
-matplotlib    # For plotting continuous spectral curves and quick-look charts
-scikit-learn  # For the machine learning and dimensionality reduction steps later
