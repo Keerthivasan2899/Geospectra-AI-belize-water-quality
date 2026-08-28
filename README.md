@@ -78,3 +78,25 @@ Planet Tanager Surface Reflectance
               │
               ▼
      Statistical & Spatial Analysis
+
+---
+
+## Key Visual Results
+
+### Full Hyperspectral Class Signatures
+
+Mean hyperspectral signatures for the three data-driven coastal-water spectral classes identified through the analysis.
+
+![Full hyperspectral class signatures](outputs/figures/full_hyperspectral_class_signatures.png)
+
+### Visible-Region Spectral Signatures
+
+The visible region shows clear differences in reflectance between the three spectral classes, with the strongest reliable visible separation occurring near 570.83 nm.
+
+![Visible spectral class signatures](outputs/figures/visible_spectral_class_signatures.png)
+
+### Spatial Distribution of Spectral Classes
+
+K-means clustering reveals spatially distinct hyperspectral spectral regimes across the main connected coastal-water body.
+
+![Spatial distribution of hyperspectral coastal water classes](outputs/maps/spatial_spectral_class_map.png)
