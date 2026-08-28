@@ -2,34 +2,79 @@
 
 ## Hyperspectral Assessment of Coastal Water Quality in Corozal, Belize Using Planet Tanager Open Data
 
-### Overview
+An independent geospatial research project developed for the **Planet Tanager Open Data Competition 2026**.
 
-This repository contains an open-source geospatial research project developed for the **Planet Tanager Open Data Competition 2026**.
+This project investigates how high-dimensional hyperspectral surface-reflectance data from Planet Tanager can be used to characterize spatial variability in coastal waters and identify distinct spectral water regimes in **Corozal Bay, Belize**.
 
-The objective is to build a reproducible workflow for analyzing hyperspectral imagery to characterize coastal water optical variability using Python, GIS, and machine learning.
+> **Important:** The current analysis is exploratory. The spectral classes and indices produced by this project represent relative optical/spectral variability and are **not calibrated measurements** of turbidity, chlorophyll-a, suspended sediment concentration, or other water-quality parameters.
 
-### Study Area
+---
 
-Corozal Town, Belize
+## Study Area
 
-### Dataset
+**Corozal, Belize**
 
-- Planet Tanager Surface Reflectance
-- 426 hyperspectral bands
-- Spatial Resolution: 32.86 m
-- EPSG:32616 (WGS 84 / UTM Zone 16N)
+The analysis focuses on coastal waters within Corozal Bay using a Planet Tanager hyperspectral scene acquired on **24 August 2025**.
 
-### Project Status
+---
 
-- ✅ Environment Setup
-- ✅ Data Download
-- ✅ HDF5 Exploration
-- ✅ Visualization
-- ✅ Spectral Analysis
-- ✅ Water Classification
-- ⏳ AI Clustering
-- ⏳ Final Report
+## Dataset
 
-###
+- **Satellite / Sensor:** Planet Tanager
+- **Product:** Surface Reflectance
+- **Native spectral bands:** 426
+- **Bands retained for analysis:** 365
+- **Approximate final spectral range:** 376.44–2484.13 nm
+- **Native spatial resolution:** 32.86 m
+- **Coordinate Reference System:** EPSG:32616 — WGS 84 / UTM Zone 16N
+- **Scene acquisition date:** 24 August 2025
+- **File format:** HDF5 / HDF-EOS
 
-Keerthivasan S
+---
+
+## Research Objectives
+
+1. Explore and document the Tanager hyperspectral data structure and metadata.
+2. Visualize the hyperspectral scene using RGB composites and individual spectral bands.
+3. Investigate representative hyperspectral signatures.
+4. Develop a coastal-water mask and isolate the main connected water body.
+5. Calculate relative spectral indicators and examine their spatial variability.
+6. Apply dimensionality reduction and unsupervised machine learning to identify spectrally distinct coastal-water regimes.
+7. Evaluate the spatial distribution and spectral characteristics of the resulting classes.
+
+---
+
+## Methodology
+
+```text
+Planet Tanager Surface Reflectance
+              │
+              ▼
+      HDF5 Data Exploration
+              │
+              ▼
+      RGB & Spectral Visualization
+              │
+              ▼
+     Spectral Signature Analysis
+              │
+              ▼
+       Coastal Water Masking
+              │
+              ▼
+ Relative Spectral Feature Mapping
+              │
+              ▼
+   Spectral Quality Screening
+              │
+              ▼
+     PCA Dimensionality Reduction
+              │
+              ▼
+      K-Means Unsupervised Clustering
+              │
+              ▼
+     Spatial Spectral-Class Mapping
+              │
+              ▼
+     Statistical & Spatial Analysis
