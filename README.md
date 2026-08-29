@@ -23,8 +23,9 @@ The analysis focuses on coastal waters within Corozal Bay using a Planet Tanager
 - **Satellite / Sensor:** Planet Tanager
 - **Product:** Surface Reflectance
 - **Native spectral bands:** 426
-- **Bands retained for analysis:** 365
-- **Approximate final spectral range:** 376.44–2484.13 nm
+- **Reliable bands after product quality screening:** 368
+- **Bands used for final spectral-signature analysis:** 365
+- **Approximate spectral range used for spectral-signature analysis:** 376.44–2484.13 nm
 - **Native spatial resolution:** 32.86 m
 - **Coordinate Reference System:** EPSG:32616 — WGS 84 / UTM Zone 16N
 - **Scene acquisition date:** 24 August 2025
@@ -224,15 +225,34 @@ The project was developed using Python, Jupyter Notebook, GIS tools, and machine
 
 The required Python dependencies are listed in `requirements.txt`.
 
-Create a virtual environment:
+### 1. Create the Python environment
 
 ```bash
 python -m venv geospectra_env
-geospectra_env\Scripts\activate
-pip install -r requirements.txt
-01 → 02 → 03 → 04 → 05 → 06
-
 ```
+
+### 2. Activate the environment on Windows
+
+```powershell
+geospectra_env\Scripts\activate
+```
+
+### 3. Install the required packages
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the notebooks in numerical order
+
+```text
+01 → 02 → 03 → 04 → 05 → 06
+```
+
+The raw Planet Tanager HDF5 dataset is intentionally excluded from version control because of its size. Users should obtain the source dataset separately and place the required file under `data/raw/` before running the notebooks.
+
+Generated figures and analysis tables are provided under the `outputs/` directory where appropriate.
+
 ---
 
 ## Future Work
@@ -248,7 +268,6 @@ Future development of this project could focus on:
 - Performing uncertainty and sensitivity analysis.
 - Comparing Tanager-derived spectral features with other open satellite datasets.
 
-```
 ---
 
 ## Author
